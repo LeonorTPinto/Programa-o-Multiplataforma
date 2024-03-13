@@ -28,6 +28,7 @@ namespace Aplicação_multijanela
                     Janela_Figuras janela = new Janela_Figuras();
             
                     if(janela.ShowDialog()==true) {
+                    MessageBox.Show(janela.FigurasEscolhida);
             }
         }
 
