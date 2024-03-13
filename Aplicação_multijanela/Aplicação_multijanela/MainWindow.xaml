@@ -8,9 +8,10 @@
         Title="Lista Figuras" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Figura">
-                <MenuItem Header="Adicionar"/>
-                <MenuItem Header="Sair"/>
+            <MenuItem Header="Figura" Click="FigurasAdiconar_Click">
+                <MenuItem x:Name="Figuras_adicionar" Header="Adicionar"/>
+                <Separator/>
+                <MenuItem x:Name="Figuras_Sair" Header="Sair"  Click="FigurasSair_Click"/>
             </MenuItem>
         </Menu>
         <Grid Width="795">

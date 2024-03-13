@@ -23,5 +23,13 @@ namespace Aplicação_multijanela
         {
             InitializeComponent();
         }
+
+        private void btnInserir_Click(object sender, RoutedEventArgs e)
+        {
+            if (cbFiguras.SelectedIndex >= 0)
+            {
+                this.DialogResult = true;
+            }
+        }
     }
 }

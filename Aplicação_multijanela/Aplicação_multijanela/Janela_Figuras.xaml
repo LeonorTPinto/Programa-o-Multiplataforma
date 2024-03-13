@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Adicionar_Figuras" Height="200" Width="220">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="61,29,0,0" TextWrapping="Wrap" Text="Figura" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="41,61,0,0" VerticalAlignment="Top" Width="120">
+        <TextBlock HorizontalAlignment="Left" Margin="41,22,0,0" TextWrapping="Wrap" Text="Figura" VerticalAlignment="Top" RenderTransformOrigin="-0.841,0.344"/>
+        <ComboBox x:Name="cbFiguras" HorizontalAlignment="Left" Margin="41,61,0,0" VerticalAlignment="Top" Width="120">
             <ComboBoxItem Content="Quadrado"/>
             <ComboBoxItem Content="Retângulo"/>
             <ComboBoxItem Content="Circulo"/>
 
         </ComboBox>
-        <Button Content="Inserir" HorizontalAlignment="Left" Margin="81,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.914,-0.07"/>
+        <Button x:Name="btnInserir"  Content="Inserir" HorizontalAlignment="Left" Margin="81,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.914,-0.07" Click="btnInserir_Click"/>
 
     </Grid>
 </Window>

@@ -20,5 +20,20 @@ namespace Aplicação_multijanela
         {
             InitializeComponent();
         }
+
+      
+
+        private void FigurasAdiconar_Click(object sender, RoutedEventArgs e)
+        {
+                    Janela_Figuras janela = new Janela_Figuras();
+            
+                    if(janela.ShowDialog()==true) {
+            }
+        }
+
+        private void FigurasSair_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
