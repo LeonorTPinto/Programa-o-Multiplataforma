@@ -29,7 +29,18 @@ namespace Aplicação_multijanela
         {
             if (cbFiguras.SelectedIndex >= 0)
             {
-                FigurasEscolhida = cbFiguras.SelectedValue.ToString();
+                switch(cbFiguras.SelectedIndex)
+                {
+                    case 0: FigurasEscolhida = "Quadrado";
+                        break;
+                    case 1:
+                        FigurasEscolhida = "Retangulo";
+                        break;
+                    case 2:
+                        FigurasEscolhida = "Circulo";
+                        break;
+                }
+               // FigurasEscolhida = cbFiguras.SelectedValue.ToString();
                 this.DialogResult = true;
             }
         }

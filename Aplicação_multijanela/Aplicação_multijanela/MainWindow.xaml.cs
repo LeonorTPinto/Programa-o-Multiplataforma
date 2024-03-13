@@ -28,7 +28,16 @@ namespace Aplicação_multijanela
                     Janela_Figuras janela = new Janela_Figuras();
             
                     if(janela.ShowDialog()==true) {
-                    MessageBox.Show(janela.FigurasEscolhida);
+                //MessageBox.Show(janela.FigurasEscolhida);
+               lbFiguras.Items.Add(janela.FigurasEscolhida);
+                //atualiza canvas
+
+                Rectangle rect =new Rectangle();
+                rect.Width = 100;
+                rect.Height = 50;
+                rect.
+
+                canvas.Representação.Children.Add(rect);
             }
         }
 

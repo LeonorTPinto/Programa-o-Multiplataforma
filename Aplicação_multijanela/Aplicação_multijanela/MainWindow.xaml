@@ -16,8 +16,8 @@
         </Menu>
         <Grid Width="795">
             
-            <ListBox Margin="10,61,600,17" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-            <Canvas Margin="400,79,46,3" Background="Black"/>
+            <ListBox  x:Name="lbFiguras" Margin="10,61,600,17" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+            <Canvas x:Name="canvasRepresentação" Margin="400,79,46,3" Background="Black"/>
             <TextBlock   Margin="400,43,-83,0" TextWrapping="Wrap" Text="Representação" VerticalAlignment="Top"/>
             <TextBlock   Margin="10,40,307,0" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top"/>
         </Grid>
