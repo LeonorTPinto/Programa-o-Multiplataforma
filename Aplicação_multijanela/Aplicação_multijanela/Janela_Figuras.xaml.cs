@@ -18,7 +18,8 @@ namespace Aplicação_multijanela
     /// Lógica interna para Janela_Figuras.xaml
     /// </summary>
     public partial class Janela_Figuras : Window
-    {
+    {   
+        public string FigurasEscolhida {  get; private set; }
         public Janela_Figuras()
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace Aplicação_multijanela
         {
             if (cbFiguras.SelectedIndex >= 0)
             {
+                FigurasEscolhida = cbFiguras.SelectedValue.ToString();
                 this.DialogResult = true;
             }
         }
